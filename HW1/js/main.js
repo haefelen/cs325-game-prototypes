@@ -10,8 +10,8 @@ var game = new Phaser.Game(852, 839, Phaser.AUTO, '', {preload: preload, create:
     var rockLoop;
     
     function preload(){
-        game.load.image('ship', 'v1assets/ship1.png');
-        game.load.image('rock', 'v1assets/rock1.png');
+        game.load.image('ship', 'assets/ship1.png');
+        game.load.image('rock', 'assets/rock1.png');
     }
     
     function create(){
