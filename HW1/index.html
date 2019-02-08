@@ -26,68 +26,71 @@ body
 
 <ul>
 <li><strong>Originality:</strong>
-What is original about your game?
+There are many games similar to mine, but in most of them, the player has some means of destroying obstacles, usually by shooting. In my version, the player can only dodge and hope that the obstacles destory themselves by running into each other.
 </li>
 
 <li><strong>Technical Merit:</strong>
-What is interesting about your game technology?
+My code uses two infinite loops and one random number generator to generate thousands of potential asteroid paths.
 </li>
 
 <li><strong>Prototype Postmortem:</strong>
-What did you learn from this prototype?
-What was the easiest or hardest part of making it?
+While making the prototype, I learned a lot about the similarities and differences between Java and JavaScript. In the past, I had only coded in Java, so switching to a new language proved to be an interesting challenge. Likewise, I learned a lot about Phaser, included aspects of design that weren't covered in the tutorial game we made. I taught myself about the Timer and Math classes, primarily in starting/ending infinite loops and angles from degrees to radians. The easiest part of the assignment was implemeting the physics, as I had already done that in the tutorial game and wsa already familiar with how it worked. The hardest part was getting my inifnite loops working properly; for the longest time the spawnRock function wasn't triggering properly.
 </li>
 
 <li><strong>Prototype Assets:</strong>
-Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+I borrowed bothe assets from OpenGameArt.org, although I did try my hand at creating my own sprites (I'm no artist, and that idea went in the trash pretty quickly).
+Ship sprite: https://opengameart.org/content/spaceship-9
+Asteroid sprite: https://opengameart.org/content/brown-asteroid
 <ul>
 <li>Bouncing Phaser image: <a href="https://phaser.io/download/logo">Phaser logo</a></li>
 </ul>
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
-Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+My game is very similar to the original ASteroids game, released in 1979 by Atari. I borrowed some code from a few Phaser examples, namely the movement controls and the timer/score system.
+Movement example: https://phaser.io/examples/v2/arcade-physics/asteroids-movement
+Timer example: https://phaser.io/examples/v2/time/basic-looped-event
 </li>
 
 <li><strong>High Concept:</strong>
-A one-sentence summary of your game.
+Test your reflexes to dodge asteroids for as long as possible.
 </li>
 
 <li><strong>Theme:</strong>
-State which of the Storymatic themes you used.
+I did not use any Storymatic themes.
 </li>
 
 <li><strong>Mandated Variety:</strong>
-State which input, randomness, genre, and play style you used in this prototype.
+I used "tank controls," which means that pressing the "forward" control causes the player to move in the direction they're facing, instead of directly up, and that left/right controls turn the player rather than actaully moving them. I used a random number generator to randomize the angles of each asteroid as it spawns. The genre is a top-down multidirectional shooter, only without the shooting aspect, and the play style tends to be very cautious as player try to avoid areas with lots of asteroids.
 </li>
 
 <li><strong>Prototype Goal:</strong>
-What game mechanic is this prototype evaluating?
+The game is testing the movement style, as well as testing for collision between different game pbjects.
+    
 </li>
 
 <li><strong>Player Experience Goals:</strong>
-What experience do you want players to have when playing your game?
+I want players to try and anticipate where asteroids will travel, as well as take advantage of the fact that asteroids are destroyed when they collide with each other to position themselves in strategic ways.
 </li>
 
 <li><strong>Gameplay:</strong>
-A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+The player only has 3 actions: Turn Left (Left arrow key), Turn Right (right arrow key), and accelerate (up arrow key). When the player accelerates, they will always travel in the direction they are facing. Every second, the player will gain 10 points, as indicated by the counter in the top-right corner. Every 1.5 seconds, an asteroid spawn at the top of the screen, with a set velocity and a random angle. The asteroids will bounce around the screen forever until they either collide with the player or another asteroid. If two asteroids collide, they are bothe destroyed, and the player gains 50 points. If they collide with the player, the game will end, and the players score will freeze. The game was originally going to be different in 3 main ways. First, the asteroid were going to spawn in form the edges of the screen, but this made the game feel unfair, as asteroids could spawn on top of the player at almost any point. Second, the player was going to have the ability to shoot the asteroids to cause them to split apart, but this made the game too easy, as the player coul sit in the corner and fire outwards and never lose. Lastly, the asteroids were going to have a health value, and be larger and slower the more health they had, but my poor time-management caught up with me and I wasn't able to implement it in time.
 </li>
 
 <li><strong>Strategies:</strong>
-What player strategies do you expect will be effective at playing this game?
+The most effective strategy I foud was to position myself in the bottom-left or bottom-right corners of the screen, as the odds of an asteroid bouncing perfectly into a corner are pretty low.
 </li>
 
 <li><strong>Story/Setting/Premise:</strong>
-A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
-How will the dramatic tension interact with the gameplay tension?
+The game has no story. It was never intended to have one, as trying to push a story onto such a simple game might cause it to feel bloated.
 </li>
 
 <li><strong>Target Audience:</strong>
-A single sentence that describes the demographic you're trying to reach.
+Fans of old-school games, and those who enjoy competing for high-scores.
 </li>
 
 <li><strong>Play Time:</strong>
-How long does your game take to play?
+Dpending on player skill, a single round an take anywhere from 10 seconds to a few minutes, with gameplay potentially lasting forever, as it will not end until the player loses.
 </li>
 
 </ul>
