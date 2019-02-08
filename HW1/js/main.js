@@ -86,7 +86,3 @@ var game = new Phaser.Game(852, 839, Phaser.AUTO, '', {preload: preload, create:
         counter+=10;
         text2.setText('Score: ' + counter);
     }
-//every second, spawn a rock at 426, 30, give random trajectory (180 degree range down and velocity)
-    
-//ship sprite taken from https://opengameart.org/content/spaceship-9
-//rock sprite taken from https://opengameart.org/content/brown-asteroid
