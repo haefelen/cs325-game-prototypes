@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function() {
-    var game = new Phaser.Game( 936, 755, Phaser.AUTO, 'game', { preload: preload, create: create, update: update, render: render } );
+    var game = new Phaser.Game( 936, 755, Phaser.AUTO, 'game', { preload: preload, create: create, update: update} );
     
     var worldScreen;
     var leftBox;
@@ -311,10 +311,5 @@ window.onload = function() {
             winnerText.anchor.setTo(0.5, 0.5);
             winSound.play();
         }
-    }
-    function render() {
-
-    game.debug.inputInfo(16, 16);
-
     }
 };
