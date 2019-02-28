@@ -34,15 +34,17 @@ My code uses two infinite loops and one random number generator to generate thou
 </li>
 
 <li><strong>Prototype Postmortem:</strong>
-While making the prototype, I learned a lot about the similarities and differences between Java and JavaScript. In the past, I had only coded in Java, so switching to a new language proved to be an interesting challenge. Likewise, I learned a lot about Phaser, included aspects of design that weren't covered in the tutorial game we made. I taught myself about the Timer and Math classes, primarily in starting/ending infinite loops and angles from degrees to radians. The easiest part of the assignment was implemeting the physics, as I had already done that in the tutorial game and wsa already familiar with how it worked. The hardest part was getting my inifnite loops working properly; for the longest time the spawnRock function wasn't triggering properly.
+While updating the prototype, I learned more about grouping objects and updating sprites. The ship sprite updates whenever it recieves an 'up' input, and shows the fire from the engine. Likewise, the rocks are updated whenever they collide, spilliting apart and changing their scales and trajectory.
 </li>
 
 <li><strong>Prototype Assets:</strong>
-I borrowed both assets from OpenGameArt.org, although I did try my hand at creating my own sprites (I'm no artist, and that idea went in the trash pretty quickly).
-Ship sprite: https://opengameart.org/content/spaceship-9
-Asteroid sprite: https://opengameart.org/content/brown-asteroid
-<ul>
-<li>Bouncing Phaser image: <a href="https://phaser.io/download/logo">Phaser logo</a></li>
+I borrowed both game assets from OpenGameArt.org, and I made the flame trail on the ship myself. I found the backround tiles and sound effects online as well.
+    <ul>
+    <li>Player sprite: <a href="https://opengameart.org/content/spaceship-9"> Ship</a></li>
+    <li>Obstacle sprite: <a href="https://opengameart.org/content/brown-asteroid"> Asteroid</a></li>
+    <li>Sound Effect: <a href="https://www.freesoundeffects.com/free-sounds/explosion-10070/"> Explosion</a></li>
+    <li>Background Tile: <a href="http://backgroundlabs.com/item/starfield-background/"> Stars</a></li>
+    <li>Bouncing Phaser image: <a href="https://phaser.io/download/logo">Phaser logo</a></li>
 </ul>
 </li>
 
