@@ -14,11 +14,11 @@
     var deathSound;
     
     function preload(){
-        game.load.image('background', 'assets/Game_1/star-background.png');
-        game.load.image('ship', 'assets/Game_1/ship1.png');
-        game.load.image('ship2', 'assets/Game_1/ship2.png');
-        game.load.image('rock', 'assets/Game_1/rock1.png');
-        game.load.audio('boom', 'assets/Game_1/boom.mp3');
+        game.load.image('background', 'assets/star-background.png');
+        game.load.image('ship', 'assets/ship1.png');
+        game.load.image('ship2', 'assets/ship2.png');
+        game.load.image('rock', 'assets/rock1.png');
+        game.load.audio('boom', 'assets/boom.mp3');
     }
     
     function create(){
